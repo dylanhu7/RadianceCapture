@@ -3,26 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FCE8A00C2A4BA0AD00C13562 /* Radiance_CaptureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8A00B2A4BA0AD00C13562 /* Radiance_CaptureApp.swift */; };
+		FC72AA5E2A4E7EF300D14C22 /* ObjectCaptureGuidance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC72AA5D2A4E7EF300D14C22 /* ObjectCaptureGuidance.swift */; };
+		FCE8A00C2A4BA0AD00C13562 /* RadianceCaptureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8A00B2A4BA0AD00C13562 /* RadianceCaptureApp.swift */; };
 		FCE8A00E2A4BA0AD00C13562 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8A00D2A4BA0AD00C13562 /* Item.swift */; };
 		FCE8A0102A4BA0AD00C13562 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8A00F2A4BA0AD00C13562 /* ContentView.swift */; };
 		FCE8A0122A4BA0AE00C13562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE8A0112A4BA0AE00C13562 /* Assets.xcassets */; };
 		FCE8A0162A4BA0AE00C13562 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE8A0152A4BA0AE00C13562 /* Preview Assets.xcassets */; };
+		FCE8A0212A4BA95200C13562 /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8A0202A4BA95200C13562 /* CaptureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC72AA5D2A4E7EF300D14C22 /* ObjectCaptureGuidance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectCaptureGuidance.swift; sourceTree = "<group>"; };
 		FCE8A0082A4BA0AD00C13562 /* Radiance Capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radiance Capture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCE8A00B2A4BA0AD00C13562 /* Radiance_CaptureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radiance_CaptureApp.swift; sourceTree = "<group>"; };
+		FCE8A00B2A4BA0AD00C13562 /* RadianceCaptureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadianceCaptureApp.swift; sourceTree = "<group>"; };
 		FCE8A00D2A4BA0AD00C13562 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		FCE8A00F2A4BA0AD00C13562 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FCE8A0112A4BA0AE00C13562 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FCE8A0132A4BA0AE00C13562 /* Radiance_Capture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Radiance_Capture.entitlements; sourceTree = "<group>"; };
+		FCE8A0132A4BA0AE00C13562 /* RadianceCapture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RadianceCapture.entitlements; sourceTree = "<group>"; };
 		FCE8A0152A4BA0AE00C13562 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCE8A0172A4BA0AE00C13562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE8A0202A4BA95200C13562 /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +59,9 @@
 		FCE8A00A2A4BA0AD00C13562 /* Radiance Capture */ = {
 			isa = PBXGroup;
 			children = (
-				FCE8A00B2A4BA0AD00C13562 /* Radiance_CaptureApp.swift */,
-				FCE8A00D2A4BA0AD00C13562 /* Item.swift */,
-				FCE8A00F2A4BA0AD00C13562 /* ContentView.swift */,
-				FCE8A0112A4BA0AE00C13562 /* Assets.xcassets */,
-				FCE8A0132A4BA0AE00C13562 /* Radiance_Capture.entitlements */,
-				FCE8A0172A4BA0AE00C13562 /* Info.plist */,
+				FCE8A01E2A4BA33A00C13562 /* App */,
+				FCE8A01D2A4BA32A00C13562 /* Views */,
+				FCE8A01F2A4BA38000C13562 /* Models */,
 				FCE8A0142A4BA0AE00C13562 /* Preview Content */,
 			);
 			path = "Radiance Capture";
@@ -72,6 +73,35 @@
 				FCE8A0152A4BA0AE00C13562 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FCE8A01D2A4BA32A00C13562 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8A00F2A4BA0AD00C13562 /* ContentView.swift */,
+				FCE8A0202A4BA95200C13562 /* CaptureView.swift */,
+				FC72AA5D2A4E7EF300D14C22 /* ObjectCaptureGuidance.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCE8A01E2A4BA33A00C13562 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8A00B2A4BA0AD00C13562 /* RadianceCaptureApp.swift */,
+				FCE8A0112A4BA0AE00C13562 /* Assets.xcassets */,
+				FCE8A0132A4BA0AE00C13562 /* RadianceCapture.entitlements */,
+				FCE8A0172A4BA0AE00C13562 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FCE8A01F2A4BA38000C13562 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8A00D2A4BA0AD00C13562 /* Item.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +140,7 @@
 				};
 			};
 			buildConfigurationList = FCE8A0032A4BA0AD00C13562 /* Build configuration list for PBXProject "Radiance Capture" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -145,8 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCE8A00E2A4BA0AD00C13562 /* Item.swift in Sources */,
-				FCE8A00C2A4BA0AD00C13562 /* Radiance_CaptureApp.swift in Sources */,
+				FCE8A00C2A4BA0AD00C13562 /* RadianceCaptureApp.swift in Sources */,
 				FCE8A0102A4BA0AD00C13562 /* ContentView.swift in Sources */,
+				FC72AA5E2A4E7EF300D14C22 /* ObjectCaptureGuidance.swift in Sources */,
+				FCE8A0212A4BA95200C13562 /* CaptureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,15 +304,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Radiance Capture/Radiance_Capture.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Radiance Capture/App/RadianceCapture.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Radiance Capture/Preview Content\"";
 				DEVELOPMENT_TEAM = AK5ZA9F5W2;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Radiance Capture/Info.plist";
+				INFOPLIST_FILE = "Radiance Capture/App/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera to capture the scene.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -296,10 +330,13 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "hu.dylan.Radiance-Capture";
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dylan.RadianceCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,15 +348,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Radiance Capture/Radiance_Capture.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Radiance Capture/App/RadianceCapture.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Radiance Capture/Preview Content\"";
 				DEVELOPMENT_TEAM = AK5ZA9F5W2;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Radiance Capture/Info.plist";
+				INFOPLIST_FILE = "Radiance Capture/App/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera to capture the scene.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -335,10 +374,13 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "hu.dylan.Radiance-Capture";
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dylan.RadianceCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
