@@ -13,24 +13,8 @@ struct CaptureView: View {
     
     var body: some View {
         ZStack {
-            ObjectCaptureView(session: session)
+            ObjectCaptureView(session: session).edgesIgnoringSafeArea(.all)
             ObjectCaptureGuidance(session: session)
-        }
-    }
-}
-
-struct CreateButton: View {
-    let label: String
-    let action: () -> Void
-    
-    var body: some View {
-        Button(action: action) {
-            Text(label)
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .padding()
-                .foregroundColor(.white)
-                .background(Color.blue)
-                .cornerRadius(40)
         }
     }
 }

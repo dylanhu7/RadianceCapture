@@ -42,7 +42,7 @@ struct ContentView: View {
                 }
             }
             .fullScreenCover(isPresented: $isPresented) {
-                CaptureView(session: session).edgesIgnoringSafeArea(.all)
+                CaptureView(session: session)
             }
         }
         .onAppear {
