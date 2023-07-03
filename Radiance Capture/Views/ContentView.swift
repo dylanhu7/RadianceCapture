@@ -45,23 +45,6 @@ struct ContentView: View {
                 CaptureView(session: session)
             }
         }
-        .onAppear {
-            setupSession()
-        }
-    }
-    
-    func setupSession() {
-        var configuration = ObjectCaptureSession.Configuration()
-        configuration.checkpointDirectory = getDocumentsDir().appendingPathComponent("Snapshots/")
-        print(session.state)
-        session.start(imagesDirectory: getDocumentsDir().appendingPathComponent("Images/"), configuration: configuration)
-        print(session.state)
-    }
-    
-    // A method for getting the document directory
-    func getDocumentsDir() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
     }
     
     private func addItem() {

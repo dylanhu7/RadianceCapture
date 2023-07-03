@@ -9,14 +9,15 @@ import SwiftUI
 import RealityKit
 
 struct ObjectCaptureGuidance: View {
-    @Environment(\.dismiss) var dismiss
     @ObservedObject var session: ObjectCaptureSession
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack {
             HStack {
                 Button {
                     dismiss()
+                    session.cancel()
                 } label: {
                     Text("Cancel").fontWeight(.semibold).foregroundStyle(.white).padding(.all, 12).font(.callout)
                 }.background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 12, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)).preferredColorScheme(.dark)
